@@ -1,0 +1,25 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo fixed-top mb-3">
+    <mdb-navbar-brand><a class="navbar-brand" href="/home" mdbWavesEffect >Forum</a></mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+      <form class="form-inline waves-light" mdbWavesEffect>
+          <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          </div>
+      </form>
+      <div class="nav-item dropdown text-white" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>Jethro<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Profile</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+          </div>
+      </div>
+  </links>
+</mdb-navbar>
+<main>
+  <router-outlet> </router-outlet>
+</main>

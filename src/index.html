@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forum</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet"> 
+</head>
+<body style="background-color:#E9EBEE">
+  <app-root></app-root>
+</body>
+<!-- JQuery -->
+<script type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"></script>
+</html>
+<script>
+    $('button#bProfile').click(function(){
+      $('div#profile').removeAttr("hidden")
+      $('div#posts').attr('hidden', 'hidden')
+    })
+    $('button#bPosts').click(function(){
+      $('div#posts').removeAttr("hidden")
+      $('div#profile').attr('hidden', 'hidden')
+    })
+    $('button#hide').click(function(){
+      $('div#profile').attr('hidden', 'hidden')
+      $('div#posts').removeAttr("hidden")
+    })
+  </script>
